@@ -1,0 +1,85 @@
+header {
+  padding: 8rem 5vw 5.7rem;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  background-image: url(../assets/Background_Intro.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  > #profile-picture {
+    width: fit-content;
+    position: relative;
+    
+    img:first-child {
+      width: 10rem;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid var(--red);
+      padding: 4.6px;
+    }
+
+    img:last-child {
+      width: 3.2rem;
+      position: absolute;
+      right: 0;
+      top: 7rem;
+    }
+
+  }
+
+  > p:first-of-type {
+    margin-top: 5.6rem;
+    font: var(--subtitle);
+
+    span {
+      color: var(--red);
+    }
+  }
+
+  h1{
+    font: var(--title-lg);
+    margin: 0.8rem 0 2rem;
+  }
+
+  > p:last-of-type {
+    max-width: 75ch;
+    text-align: center;
+  }
+
+  ul#skills {
+    margin: 6rem 0 6rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6rem;
+
+    .tech {
+      background-color: var(--gray-300);
+      color: var(--gray-500);
+      font: var(--text-md);
+
+      padding: 0.8rem 1.6rem;
+      border-radius: 999px;
+
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+
+      img {
+        width: 2.4rem;
+      }
+
+      .github {
+        background-color: brown;
+      }
+    }
+  }
+}
